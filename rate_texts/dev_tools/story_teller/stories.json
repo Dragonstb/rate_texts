@@ -1,0 +1,614 @@
+{
+    "story_nodes": [
+        {
+            "text": "#c:old:hero() had lived in #t:old:hometown() since birth.",
+            "tags": [
+                "exposition"
+            ]
+        },
+        {
+            "text": "#c:old:hero() grew up in #t:old:hometown().",
+            "tags": [
+                "exposition"
+            ]
+        },
+        {
+            "text": "#c:old:hero() raised to a sturdy person in #t:old:hometown().",
+            "tags": [
+                "exposition"
+            ]
+        },
+        {
+            "text": "#t:old:hometown() was a cute village #r:old:homeregion(places).",
+            "tags": [
+                "home_desc"
+            ],
+            "follows_on": [
+                "exposition"
+            ]
+        },
+        {
+            "text": "Today was a sunny day.",
+            "tags": [
+                "weather_info"
+            ],
+            "follows_on": [
+                "home_desc"
+            ]
+        },
+        {
+            "text": "Today was a rainy day.",
+            "tags": [
+                "weather_info"
+            ],
+            "follows_on": [
+                "home_desc"
+            ]
+        },
+        {
+            "tags": [
+                "weather_info"
+            ],
+            "follows_on": [
+                "home_desc"
+            ],
+            "text": "Today was a stormy day."
+        },
+        {
+            "text": "#c:old:hero() worked in #c:new:employer(g) smith.",
+            "tags": ["medivial", "intro", "employed"],
+            "follows_on": ["weather_info"]
+        },
+        {
+            "text": "#c:old:hero() worked in #c:new:employer(g) tavern.",
+            "tags": ["medivial", "intro", "employed"],
+            "follows_on": ["weather_info"]
+        },
+        {
+            "text": "#c:old:hero() worked in #c:new:employer(g) mill.",
+            "tags": ["medivial", "intro", "employed"],
+            "follows_on": ["weather_info"]
+        },
+        {
+            "text": "#c:old:hero() worked in #c:new:employer(g) bakery.",
+            "tags": ["medivial", "intro", "employed"],
+            "follows_on": ["weather_info"]
+        },
+        {
+            "text": "#c:old:hero() worked on #c:new:employer(g) farm.",
+            "tags": ["medivial", "intro", "employed"],
+            "follows_on": ["weather_info"]
+        },
+        {
+            "text": "#c:old:hero() worked in",
+            "tags": ["medivial", "intro"],
+            "follows_on": ["weather_info"]
+        },
+        {
+            "text": "#c:new:client(), Ruler of the Royal Realm, spoke: The evil dragon #c:new:enemy() threatens our lands.",
+            "tags": ["quest", "evil dragon", "enemy"],
+            "follows_on": ["medivial", "intro"]
+        },
+        {
+            "text": "#c:new:client(), Ruler of the Royal Realm, spoke: The evil wizard #c:new:enemy() threatens our lands.",
+            "tags": ["quest", "evil wizard", "enemy"],
+            "follows_on": ["medivial", "intro"]
+        },
+        {
+            "text": "#c:new:client(), Ruler of the Royal Realm, spoke: The evil witch #c:new:enemy() threatens our lands.",
+            "tags": ["quest", "evil witch", "enemy"],
+            "follows_on": ["medivial", "intro"]
+        },
+        {
+            "text": "#c:new:client(), Ruler of the Royal Realm, spoke: The evil necromancer #c:new:enemy() threatens our lands.",
+            "tags": ["quest", "evil necromancer", "enemy"],
+            "follows_on": ["medivial", "intro"]
+        },
+        {
+            "text": "Whoever overcomes and defeates #c:old:enemy() will receive half of the royal treasure.",
+            "tags": ["prospective award", "half the money"],
+            "follows_on": ["quest", "enemy"],
+            "lineage_of": ["medivial"]
+        },
+        {
+            "text": "Whoever overcomes and defeates #c:old:enemy() will receive half the kingdom and the hand of the royal firstborn, #c:new:firstborn().",
+            "tags": ["prospective award", "firstborn"],
+            "follows_on": ["quest", "enemy"],
+            "lineage_of": ["medivial"]
+        },
+        {
+            "text": "#c:old:hero() wanted to go, and #c:old:employer() allowed so. 'But where can I find #c:old:enemy()?' 'I do not know. But maybe #c:new:infodropper() in #t:new:infoplace() can help you.' So #c:old:hero() went to #t:old:infoplace().",
+            "tags": ["seek guidance"],
+            "follows_on": ["prospective award"],
+            "lineage_of": ["employed", "enemy"]
+        },
+        {
+            "text": "One day #c:new:customer(), a customer, told #c:old:hero() about #c:new:hoarder(g) treasure, said to be long forgotten in lost #t:new:goalplace().",
+            "tags": ["quest", "lost town", "treasure"],
+            "follows_on": ["medivial", "intro"]
+        },
+        {
+            "text": "#c:old:hero() wanted to find this treasure, and #c:old:employer() allowed so. 'But where can I find #t:old:goalplace()?' 'I do not know. But maybe #c:new:infodropper() in #t:new:infoplace() can help you.' So #c:old:hero() went to #t:old:infoplace().",
+            "tags": ["seek guidance"],
+            "follows_on": ["quest", "treasure"],
+            "lineage_of": ["employed"]
+        },
+        {
+            "text": "#c:old:hero() arrived in #t:old:infoplace() and asked #c:old:infodropper() about the whereabouts of #c:old:enemy().",
+            "tags": ["arrive for guidance"],
+            "follows_on": ["seek guidance"],
+            "lineage_of": ["enemy"]
+        },
+        {
+            "text": "#c:old:hero() arrived in #t:old:infoplace() and asked #c:old:infodropper() about the location of #t:old:goalplace().",
+            "tags": ["arrive for guidance"],
+            "follows_on": ["seek guidance"],
+            "lineage_of": ["lost town"]
+        },
+        
+        {
+            "text": "But #c:old:infodropper() could not help. '#c:new:infodropper() in #t:new:infoplace(), #r:new:inforegion(places), might know.' So #c:old:hero() thanked and begun the new part of this journey.",
+            "tags": ["seek guidance"],
+            "follows_on": ["arrive for guidance"]
+        },
+        {
+            "text": "'Ah, yes' said #c:old:infodropper(). 'You can find #c:old:enemy() near #t:new:goalplace(), #r:new:goalregion(places). #c:old:hero() thanked #c:old:infodropper() and immediately headed towards #t:old:goalplace().",
+            "tags": ["get guidance"],
+            "follows_on": ["arrive for guidance"],
+            "lineage_of": ["enemy"]
+        },
+        {
+            "text": "'Sure you want to face this opponent?' said #c:old:infodropper(). 'Then you can find whom you seek near #t:new:goalplace(), #r:new:goalregion(places). #c:old:hero() thanked #c:old:infodropper() and immediately headed towards #t:old:goalplace().",
+            "tags": ["get guidance"],
+            "follows_on": ["arrive for guidance"],
+            "lineage_of": ["enemy"]
+        },
+        {
+            "text": "'Ah, yes' said #c:old:infodropper(). 'You can find #t:old:goalplace() #r:new:goalregion(places). #c:old:hero() thanked #c:old:infodropper() and immediately headed towards #t:old:goalplace().",
+            "tags": ["get guidance"],
+            "follows_on": ["arrive for guidance"],
+            "lineage_of": ["lost town"]
+        },
+        {
+            "text": "'A strange place it what you are looking for.' said #c:old:infodropper(). 'You can find #t:old:goalplace() #r:new:goalregion(places). #c:old:hero() thanked #c:old:infodropper() and immediately headed towards #t:old:goalplace().",
+            "tags": ["get guidance"],
+            "follows_on": ["arrive for guidance"],
+            "lineage_of": ["lost town"]
+        },
+        {
+            "text": "Eventually, #c:old:hero() arrived in #t:old:goalplace(). It seemed to be en eerie place.",
+            "tags": ["arrive at goal"],
+            "follows_on": ["get guidance"]
+        },
+        {
+            "text": "#c:old:enemy() already awaited #c:old:hero(), and the fight commenced.",
+            "tags": ["meet enemy"],
+            "follows_on": ["arrive at goal"],
+            "lineage_of": ["enemy"]
+        },
+        {
+            "text": "It turned out that #c:old:hoarder(g) treasure was guarded by the dragon #c:new:enemy().",
+            "tags": ["meet enemy"],
+            "follows_on": ["arrive at goal"],
+            "lineage_of": ["treasure"]
+        },
+        {
+            "text": "It turned out that #c:old:hoarder(g) treasure was guarded by the giant #c:new:enemy().",
+            "tags": ["meet enemy"],
+            "follows_on": ["arrive at goal"],
+            "lineage_of": ["treasure"]
+        },
+        {
+            "text": "It turned out that #c:old:hoarder(g) treasure was guarded by the evil monster #c:new:enemy().",
+            "tags": ["meet enemy"],
+            "follows_on": ["arrive at goal"],
+            "lineage_of": ["treasure"]
+        },
+        {
+            "text": "#c:old:hero() defeated #c:old:enemy() with a magic spell.",
+            "tags": ["defeat enemy"],
+            "follows_on": ["meet enemy"],
+            "lineage_of": ["medivial"]
+        },
+        {
+            "text": "#c:old:hero() defeated #c:old:enemy() with a proper hit landed with a branch.",
+            "tags": ["defeat enemy"],
+            "follows_on": ["meet enemy"],
+            "lineage_of": ["medivial"]
+        },
+        {
+            "text": "#c:old:hero() defeated #c:old:enemy() by solving a riddle.",
+            "tags": ["defeat enemy"],
+            "follows_on": ["meet enemy"],
+            "lineage_of": ["medivial"]
+        },
+        {
+            "text": "#c:old:hero() defeated #c:old:enemy() with a good punch into the stomach.",
+            "tags": ["defeat enemy"],
+            "follows_on": ["meet enemy"]
+        },
+        {
+            "text": "But #c:old:enemy() defeated #c:old:hero() with a good punch into the stomach. #c:old:hero() died with the quest unfullfilled.",
+            "tags": ["end"],
+            "follows_on": ["meet enemy"]
+        },
+        {
+            "text": "But #c:old:enemy() defeated #c:old:hero() with a magic spell. #c:old:hero() died with the quest unfullfilled.",
+            "tags": ["end"],
+            "follows_on": ["meet enemy"],
+            "lineage_of": ["medivial"]
+        },
+        {
+            "text": "#c:old:hero() returned to #t:old:hometown()",
+            "tags": ["return from quest"],
+            "follows_on": ["defeat enemy"],
+            "lineage_of": ["quest"]
+        },
+        {
+            "text": "and was awarded with half of the kingom's treasure. After settling down then, #c:old:hero() lived happily until the end.",
+            "tags": ["quest award"],
+            "follows_on": ["return from quest"],
+            "lineage_of": ["enemy", "half the money", "quest"]
+        },
+        {
+            "text": "and was awarded with half of the kingom. Here #c:old:hero() started a shared flat in a castle, together with #c:old:firstborn(). They lived happily to the end.",
+            "tags": ["quest award"],
+            "follows_on": ["return from quest"],
+            "lineage_of": ["enemy", "firstborn", "quest"]
+        },
+        {
+            "text": "and lived happily until the end.",
+            "tags": ["quest award"],
+            "follows_on": ["return from quest"],
+            "lineage_of": ["treasure", "quest"]
+        },
+        {
+            "text": "In the evening, the bandit #c:new:enemy() came, robbed all of #c:old:employer(g) valuable possessions, and laid fire to the buildings. 'Do not worry,' said #c:old:hero(). 'I am going to find #c:old:enemy() and bring back all your goods.'",
+            "tags": ["raid", "robbery", "enemy"],
+            "follows_on": ["medivial", "intro"]
+        },
+        {
+            "text": "In the evening, the gnoll #c:new:enemy() came, robbed all of #c:old:employer(g) valuable possessions, and laid fire to the buildings. 'Do not worry,' said #c:old:hero(). 'I am going to find #c:old:enemy() and bring back all your goods.'",
+            "tags": ["raid", "robbery", "enemy"],
+            "follows_on": ["medivial", "intro"]
+        },
+        {
+            "text": "In the evening, the goblin #c:new:enemy() came, kidnapped all of #c:old:employer(g) children, and laid fire to the buildings. 'Do not worry,' said #c:old:hero(). 'I am going to find #c:old:enemy() and bring your children back.'",
+            "tags": ["raid", "kidnapping", "enemy"],
+            "follows_on": ["medivial", "intro"]
+        },
+        {
+            "text": "#c:old:hero() went to the mighty Mage #c:new:mentor(), who lived in #t:new:mentortown() #r:new:mentorregion(places).",
+            "tags": ["visit mentor"],
+            "follows_on": ["raid"],
+            "lineage_of": ["medivial"]
+        },
+        {
+            "text": "#c:old:hero() went to the powerful Knight #c:new:mentor(), who lived in #t:new:mentortown() #r:new:mentorregion(places).",
+            "tags": ["visit mentor"],
+            "follows_on": ["raid"],
+            "lineage_of": ["medivial"]
+        },
+        {
+            "text": "Under #c:old:mentor(g) tough drill, #c:old:hero() grew strong and dexterous.",
+            "tags": ["mentor training"],
+            "follows_on": ["visit mentor"]
+        },
+        {
+            "text": "One day, #c:old:mentor() spoke to #c:old:hero(): 'You are strong and dexterous now. There is nothing more I can teach you. Now go, and complete your quest.' 'But where can I find #c:old:enemy()?' was #c:old:hero(g) reply. 'I cannot tell you that. But travel to #t:new:infoplace(), #r:new:inforegion(places). You may find #c:new:infodropper() there, who surely can help you.'",
+            "tags": ["seek guidance", "leave mentor"],
+            "follows_on": ["mentor training"]
+        },
+        {
+            "text": "#c:old:hero() collected all the stolen treasures and brought them back to #c:old:employer(). After this adventure, #c:old:hero() lived happily until the end.",
+            "tags": ["end"],
+            "follows_on": ["defeat enemy"],
+            "lineage_of": ["raid", "robbery", "employed"]
+        },
+        {
+            "text": "#c:old:hero() returned to #c:old:employer() with the children unharmed. After this adventure, they all lived happily until the end.",
+            "tags": ["end"],
+            "follows_on": ["defeat enemy"],
+            "lineage_of": ["raid", "kidnapping", "employed"]
+        },
+        {
+            "text": "#c:new:hero(), PI, stood at the window of the smoky office in #t:new:hometown().",
+            "tags": ["exposition-pi", "pi", "modern"]
+        },
+        {
+            "text": "#c:new:hero(), PI, sat in the chair behind the dirty desk in the office in #t:new:hometown().",
+            "tags": ["exposition-pi", "pi", "modern"]
+        },
+        {
+            "text": "This town was the bottom of a trash bin that had not been emptied since years.",
+            "tags": ["home_desc-pi"],
+            "follows_on": ["exposition-pi"],
+            "lineage_of": ["pi"]
+        },
+        {
+            "text": "This town were the rotten excrements of society.",
+            "tags": ["home_desc-pi"],
+            "follows_on": ["exposition-pi"],
+            "lineage_of": ["pi"]
+        },
+        {
+            "text": "This town was a pit avoided even by the demons of hell.",
+            "tags": ["home_desc-pi"],
+            "follows_on": ["exposition-pi"],
+            "lineage_of": ["pi"]
+        },
+        {
+            "text": "They dirty rain proofed the strength of the windows.",
+            "tags": ["weather-info-pi"],
+            "follows_on": ["home_desc-pi"],
+            "lineage_of": ["pi"]
+        },
+        {
+            "text": "The howls of the storm sounded like mockery from the sky.",
+            "tags": ["weather-info-pi"],
+            "follows_on": ["home_desc-pi"],
+            "lineage_of": ["pi"]
+        },
+        {
+            "text": "The greasy fog ouside ate any view you theoretically could have from thw window.",
+            "tags": ["weather-info-pi"],
+            "follows_on": ["home_desc-pi"],
+            "lineage_of": ["pi"]
+        },
+        {
+            "text": "Suddenly, #c:new:client(), dressed completly in red, came through the door. 'What can I do for you?' asked #c:old:hero() without enthusiasm.",
+            "tags": ["client enters"],
+            "follows_on": ["weather-info-pi"]
+        },
+        {
+            "text": "'My jewelery has been stolen in #t:new:crimescene(). Bring it back.'",
+            "tags": ["client task", "robbery", "enemy"],
+            "follows_on": ["client enters"],
+            "lineage_of": ["pi"]
+        },
+        {
+            "text": "'My best friend #c:new:friend() has been kidnapped in #t:new:crimescene(). Please rescue #c:old:friend().'",
+            "tags": ["client task", "kidnapping", "enemy"],
+            "follows_on": ["client enters"],
+            "lineage_of": ["pi"]
+        },
+        {
+            "text": "#c:old:hero() went to #t:old:crimescene() and investigated the place. After the investigation of the crime scene, #c:old:hero() met with #c:new:infodropper() about the case.",
+            "tags": ["meet contact"],
+            "follows_on": ["client task"],
+            "lineage_of": ["pi"]
+        },
+        {
+            "text": "'The traces point to #c:new:enemy(). But I do not know where to find this rascal.' mentioned #c:old:infodropper(). 'You can ask #c:new:infodropper() in #t:new:infoplace().'",
+            "tags": ["seek guidance"],
+            "follows_on": ["meet contact"],
+            "lineage_of": ["pi"]
+        },
+        {
+            "text": "#c:old:hero() defeated #c:old:enemy() in a shootout.",
+            "tags": ["defeat enemy"],
+            "follows_on": ["meet enemy"],
+            "lineage_of": ["modern"]
+        },
+        {
+            "text": "But #c:old:enemy() defeated #c:old:hero() in a shooting, and #c:old:hero() died in vain.",
+            "tags": ["end"],
+            "follows_on": ["meet enemy"],
+            "lineage_of": ["modern"]
+        },
+        {
+            "text": "#c:old:hero() recovered #c:old:client(g) jewellery. The client was very happy getting them back and payed #c:old:hero() a lot of money as reward.",
+            "tags": ["end"],
+            "follows_on": ["defeat enemy"],
+            "lineage_of": ["pi", "robbery"]
+        },
+        {
+            "text": "#c:old:hero() rescued #c:old:client(g) friend #c:old:friend(). The latter two were very happy as they reunited and payed #c:old:hero() a lot of money as reward.",
+            "tags": ["end"],
+            "follows_on": ["defeat enemy"],
+            "lineage_of": ["pi", "kidnapping"]
+        }
+
+    ],
+    "char_names": [
+        "Albert",
+        "Alexander",
+        "Alexandra",
+        "Alexia",
+        "Alfred",
+        "Alice",
+        "Anna",
+        "Barbara",
+        "Bart",
+        "Belinda",
+        "Bethany",
+        "Bertram",
+        "Betty",
+        "Bridget",
+        "Brittany",
+        "Butch",
+        "Carl",
+        "Cassandra",
+        "Chantalle",
+        "Charles",
+        "Clara",
+        "Cynthia",
+        "Damian",
+        "Daniel",
+        "Danielle",
+        "Dante",
+        "Deborah",
+        "Dora",
+        "Dorothy",
+        "Earl",
+        "Emma",
+        "Ernest",
+        "Estelle",
+        "Esther",
+        "Eve",
+        "Fanny",
+        "Felicitas",
+        "Flloyd",
+        "Frederic",
+        "Geoffrey",
+        "George",
+        "Giselle",
+        "Graham",
+        "Grant",
+        "Gus",
+        "Gustav",
+        "Heather",
+        "Homer",
+        "Hubert",
+        "Ian",
+        "Isabelle",
+        "Jade",
+        "Jaden",
+        "Janet",
+        "Janice",
+        "Janine",
+        "Jared",
+        "Jason",
+        "Jeff",
+        "Jeremy",
+        "John",
+        "Jonathan",
+        "Julia",
+        "Julian",
+        "Keith",
+        "Lara",
+        "Lars",
+        "Laura",
+        "Leon",
+        "Leonie",
+        "Lisa",
+        "Lydia",
+        "Mandy",
+        "Marc",
+        "Marcel",
+        "Martha",
+        "Mathilda",
+        "Micheal",
+        "Michelle",
+        "Miranda",
+        "Mitch",
+        "Nancy",
+        "Naomi",
+        "Nathan",
+        "Nathaniel",
+        "Patricia",
+        "Patrick",
+        "Patty",
+        "Paul",
+        "Paula",
+        "Philip",
+        "Philippa",
+        "Phoebe",
+        "Quentin",
+        "Randy",
+        "Ray",
+        "Raymond",
+        "Richard",
+        "Rick",
+        "Rita",
+        "Rufus",
+        "Rupert",
+        "Sabrina",
+        "Samantha",
+        "Sandra",
+        "Sarah",
+        "Sebastian",
+        "Steve",
+        "Steven",
+        "Tamara",
+        "Tara",
+        "Theodore",
+        "Tiffany",
+        "Tilda",
+        "Tim",
+        "Timothy",
+        "Tristan",
+        "Ulysses",
+        "Undine",
+        "Valentina",
+        "Vera",
+        "Veronica",
+        "Victor",
+        "Victoria",
+        "Walther",
+        "William",
+        "Xander",
+        "Xynthia",
+        "Zachary",
+        "Zoe"
+    ],
+    "regions": [
+        {
+            "name": "sea",
+            "places": [
+                "near the sea",
+                "at the shores of the sea"
+            ]
+        },
+        {
+            "name": "island",
+            "places": [
+                "on an island in the sea",
+                "on an island surrounded by the sea"
+            ]
+        },
+        {
+            "name": "plains",
+            "places": [
+                "on the plains",
+                "in the middle of the plains",
+                "deep in the plains"
+            ]
+        },
+        {
+            "name": "plains",
+            "places": [
+                "on the plains",
+                "at the edge of the plains"
+            ]
+        },
+        {
+            "name": "mountains",
+            "places": [
+                "close to the mountains",
+                "at the foot of the mountains",
+                "beneath the shadows of the mountains"
+            ]
+        },
+        {
+            "name": "mountains",
+            "places": [
+                "deep in the mountains",
+                "up in the mountains",
+                "between the peaks of the mountains"
+            ]
+        },
+        {
+            "name": "valley",
+            "places": [
+                "at the mouth of a valley",
+                "at the end of a valley",
+                "deep in a valley"
+            ]
+        },
+        {
+            "name": "forest",
+            "places": [
+                "at the edge of the forest",
+                "where the dark forest begins"
+            ]
+        },
+        {
+            "name": "forest",
+            "places": [
+                "deep in the forest",
+                "surrounded by vast seas of dark trees"
+            ]
+        }
+    ]
+}

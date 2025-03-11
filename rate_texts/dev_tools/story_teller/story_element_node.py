@@ -1,0 +1,3 @@
+class StoryElementNode:
+
+    def get_name(self, variant: str | None = None) -> str: ...
